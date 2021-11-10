@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E2636B20F5DBB809BCC80D1 /* Pods_DayTrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D087284BEE7DF9995E9B8E5 /* Pods_DayTrip.framework */; };
 		92A87152273C42E400B49F42 /* DayTripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A87151273C42E400B49F42 /* DayTripApp.swift */; };
 		92A87154273C42E400B49F42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A87153273C42E400B49F42 /* ContentView.swift */; };
 		92A87156273C42E500B49F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A87155273C42E500B49F42 /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D087284BEE7DF9995E9B8E5 /* Pods_DayTrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayTrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB06DDC7A8D78B359CA4696 /* Pods-DayTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayTrip.release.xcconfig"; path = "Target Support Files/Pods-DayTrip/Pods-DayTrip.release.xcconfig"; sourceTree = "<group>"; };
 		92A8714E273C42E400B49F42 /* DayTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A87151273C42E400B49F42 /* DayTripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTripApp.swift; sourceTree = "<group>"; };
 		92A87153273C42E400B49F42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92A87155273C42E500B49F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A87158273C42E500B49F42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7C27B5EC36CC3DA9B2FCFA5 /* Pods-DayTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayTrip.debug.xcconfig"; path = "Target Support Files/Pods-DayTrip/Pods-DayTrip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2636B20F5DBB809BCC80D1 /* Pods_DayTrip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D446DF6BD2CCA172B40C4F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D087284BEE7DF9995E9B8E5 /* Pods_DayTrip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68ACA787E6A642A230B66C32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7C27B5EC36CC3DA9B2FCFA5 /* Pods-DayTrip.debug.xcconfig */,
+				5FB06DDC7A8D78B359CA4696 /* Pods-DayTrip.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		92A87145273C42E400B49F42 = {
 			isa = PBXGroup;
 			children = (
 				92A87150273C42E400B49F42 /* DayTrip */,
 				92A8714F273C42E400B49F42 /* Products */,
+				68ACA787E6A642A230B66C32 /* Pods */,
+				4D446DF6BD2CCA172B40C4F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92A8715C273C42E500B49F42 /* Build configuration list for PBXNativeTarget "DayTrip" */;
 			buildPhases = (
+				DEDB72FC175C63CC1238F21B /* [CP] Check Pods Manifest.lock */,
 				92A8714A273C42E400B49F42 /* Sources */,
 				92A8714B273C42E400B49F42 /* Frameworks */,
 				92A8714C273C42E400B49F42 /* Resources */,
+				1BE64BD171E106705C28BD3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BE64BD171E106705C28BD3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DayTrip/Pods-DayTrip-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DayTrip/Pods-DayTrip-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DayTrip/Pods-DayTrip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEDB72FC175C63CC1238F21B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayTrip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92A8714A273C42E400B49F42 /* Sources */ = {
@@ -263,6 +332,7 @@
 		};
 		92A8715D273C42E500B49F42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C27B5EC36CC3DA9B2FCFA5 /* Pods-DayTrip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +362,7 @@
 		};
 		92A8715E273C42E500B49F42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB06DDC7A8D78B359CA4696 /* Pods-DayTrip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
